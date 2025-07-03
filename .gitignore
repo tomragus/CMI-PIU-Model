@@ -1,0 +1,12 @@
+# Ignore data files
+data/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Notebook checkpoint files
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
