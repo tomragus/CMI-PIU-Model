@@ -1,3 +1,44 @@
+import pandas as pd
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
+from sklearn.preprocessing import StandardScaler, RobustScaler, LabelEncoder
+from sklearn.impute import SimpleImputer, KNNImputer
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.linear_model import Ridge, Lasso, ElasticNet
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from sklearn.feature_selection import SelectKBest, f_regression, mutual_info_regression
+import xgboost as xgb
+import lightgbm as lgb
+import warnings
+
+warnings.filterwarnings("ignore", category=RuntimeWarning)
+
+from matplotlib.colors import ListedColormap
+
+train = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI-PIU-Model/data/train.csv")
+actigraphy = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI-PIU-Model/data/stats.csv")
+test = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI-PIU-Model/data/test.csv")
+data_dict = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI-PIU-Model/data/data_dictionary.csv")
+sample_sub = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI-PIU-Model/data/sample_submission.csv")
+
+sns.set_theme(style="whitegrid")
+
+
+display(train.head())
+print(f"Train shape: {train.shape}")
+
+display(actigraphy.head())
+print(f"Actigraphy shape: {actigraphy.shape}")
+
+display(test.head())
+print(f"Test shape: {test.shape}")
+
+display(data_dict.head())
+
 class CMIPreprocessor:
     """
     Comprehensive preprocessing pipeline for CMI Problematic Internet Use dataset
