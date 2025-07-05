@@ -4,6 +4,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+from scipy import stats
+from scipy.stats import pearsonr, spearmanr
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
 from sklearn.preprocessing import StandardScaler, RobustScaler, LabelEncoder
 from sklearn.impute import SimpleImputer, KNNImputer
@@ -25,19 +27,6 @@ test = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI
 data_dict = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI-PIU-Model/data/data_dictionary.csv")
 sample_sub = pd.read_csv("/Users/tomragus/Library/CloudStorage/OneDrive-UCSanDiego/CMI-PIU-Model/data/sample_submission.csv")
 
-sns.set_theme(style="whitegrid")
-
-
-display(train.head())
-print(f"Train shape: {train.shape}")
-
-display(actigraphy.head())
-print(f"Actigraphy shape: {actigraphy.shape}")
-
-display(test.head())
-print(f"Test shape: {test.shape}")
-
-display(data_dict.head())
 
 class CMIPreprocessor:
     """
