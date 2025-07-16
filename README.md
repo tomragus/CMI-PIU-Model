@@ -21,4 +21,7 @@ I should give special credit to [Antonina Dolgorukova](https://datadelic.dev/) a
 - `scripts/`: Python scripts
 - `outputs/`: Results, predictions, and visualizations
 
-### Status: Finished 🏁
+### Docker:
+docker build -t cmi-piu-model .
+
+docker run -p 8888:8888 cmi-piu-model
