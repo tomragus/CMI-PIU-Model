@@ -11,7 +11,7 @@ Conversely, physical & fitness measures are extremely accessible and widely avai
 
 **What does this mean?** The Child Mind Institute has tasked the public with building predictive machine learning models that will determine a participant's Severity Impairment Index (SII) - a metric measuring the level of problematic internet use among children and adolescents - based on physical activity, health, and other factors. The aim is to improve our ability to identify signs of problematic internet use early so preventative intervention can take place.
 
-### Data *(available to download from competition page 👉 [here](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/data))*
+### ‣ 📊 The Data at Hand *(available to download from competition page 👉 [here](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/data))*
 
 From the institute's *Healthy Brain Network*, there is a roughly 4,000-entry dataset comprising measurements from various instruments, assessments, and questionairres - in particular, an assessment called the "Parent-Child Internet Addiction Test" (PCIAT), which is used to calculate the SII of each participant. There is also a collection of time-series data, collected via a wrist accelerometer given to roughly 1,000 participants to wear for up to 30 days continually while at home and going about their daily lives. This notebook is mostly focused on generating predictions using the first set of tabular data, but the time-series data is extensive and pretty interesting if you'd like to investigate it for yourself.
 
