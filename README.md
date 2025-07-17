@@ -17,11 +17,7 @@ From the institute's *Healthy Brain Network*, there is a roughly 4,000-entry dat
 
 I should give special credit to [Antonina Dolgorukova](https://datadelic.dev/) and her incredibly [extensive EDA](https://www.kaggle.com/code/antoninadolgorukova/cmi-piu-features-eda/notebook) for this competition - without it, I'm not totally sure how I would've been able to wrap my head around the nature of the problem here. Much of my EDA is an adaptation of her work, and I highly recommend checking out her work as she's quite well known in the Kaggle space.
 
-### Project Structure
-- `data/`: datasets from the Kaggle competition page
-- `notebooks/`: Jupyter notebooks for analysis and experiments
-- `scripts/`: Python scripts
-- `outputs/`: Results, predictions, and visualizations
+### ‣ 📖 [full notebook](https://github.com/tomragus/CMI-PIU-Model/blob/main/CMI-PIU-Final.ipynb)
 
 ### Docker:
 docker build -t cmi-piu-model .
