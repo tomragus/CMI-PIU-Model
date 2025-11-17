@@ -1,6 +1,6 @@
 # CMI Personal Internet Use - EDA and Predictive Machine Learning Model
 
-This is my end-to-end notebook for the Child Mind Institute's Personal Internet Use Kaggle Competition. The competition has been over for a few months now, but given my personal interest in the subject of internet overuse/ addiction and the psychology of the developing brain, I thought this would be a fun problem to sink my teeth into. 
+This is my notebook for the Child Mind Institute's Personal Internet Use Kaggle Competition. The competition has been over for a few months now, but given my personal interest in the subject of internet overuse/ addiction and the psychology of the developing brain, I thought this would be a fun problem to sink my teeth into. 
 
 ### ‣ 🧑‍💻 The Problem at Hand *(taken from the comptetition homepage 👉  [read here](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/overview))*
 "In today’s digital age, problematic internet use among children and adolescents is a growing concern. Better understanding this issue is crucial for addressing mental health problems such as depression and anxiety.
@@ -13,13 +13,13 @@ Conversely, physical & fitness measures are extremely accessible and widely avai
 
 ### ‣ 📊 The Data at Hand *(available to download from competition page 👉 [here](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/data))*
 
-From the institute's *Healthy Brain Network*, there is a roughly 4,000-entry dataset comprising measurements from various instruments, assessments, and questionairres - in particular, an assessment called the "Parent-Child Internet Addiction Test" (PCIAT), which is used to calculate the SII of each participant. There is also a collection of time-series data, collected via a wrist accelerometer given to roughly 1,000 participants to wear for up to 30 days continually while at home and going about their daily lives. This notebook is mostly focused on generating predictions using the first set of tabular data, but the time-series data is extensive and pretty interesting if you'd like to investigate it for yourself.
+From the institute's *Healthy Brain Network*, there is a roughly 4,000-entry dataset comprising measurements from various instruments, assessments, and questionairres - in particular, an assessment called the "Parent-Child Internet Addiction Test" (PCIAT), which is used to calculate the SII of each participant. There is also a collection of time-series data, collected via a wrist accelerometer given to roughly 1,000 participants to wear for up to 30 days continually while at home and going about their daily lives. This notebook is mostly focused on generating predictions using the first set of tabular data, but the time-series data is extensive and pretty interesting if you'd like to investigate it.
 
-I should give special credit to [Antonina Dolgorukova](https://datadelic.dev/) and her incredibly [extensive EDA](https://www.kaggle.com/code/antoninadolgorukova/cmi-piu-features-eda/notebook) for this competition - without it, I'm not totally sure how I would've been able to wrap my head around the nature of the problem here. Much of my EDA is an adaptation of her work, and I highly recommend checking out her work as she's quite well known in the Kaggle space.
+I should give special credit to [Antonina Dolgorukova](https://datadelic.dev/) and her incredibly [extensive EDA](https://www.kaggle.com/code/antoninadolgorukova/cmi-piu-features-eda/notebook) for this competition. Much of the EDA is an adaptation of her work, and I highly recommend checking it out.
 
 ### ‣ 📖 [full notebook](https://github.com/tomragus/CMI-PIU-Model/blob/main/CMI-PIU-Final.ipynb)
 
-### Docker:
+### Dockerfile:
 docker build -t cmi-piu-model .
 
 docker run -p 8888:8888 cmi-piu-model
