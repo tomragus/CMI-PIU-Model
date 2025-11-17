@@ -18,8 +18,3 @@ From the institute's *Healthy Brain Network*, there is a roughly 4,000-entry dat
 I should give special credit to [Antonina Dolgorukova](https://datadelic.dev/) and her incredibly [extensive EDA](https://www.kaggle.com/code/antoninadolgorukova/cmi-piu-features-eda/notebook) for this competition. Much of the EDA is an adaptation of her work, and I highly recommend checking it out.
 
 ### ‣ 📖 [full notebook](https://github.com/tomragus/CMI-PIU-Model/blob/main/CMI%20Personal%20Internet%20Use%20Classification%20Model.ipynb)
-
-### Dockerfile:
-docker build -t cmi-piu-model .
-
-docker run -p 8888:8888 cmi-piu-model
